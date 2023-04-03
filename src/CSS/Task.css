@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(72, 74, 74);
+    border-radius: 10px;
+    margin: 0.6em 0;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+.task-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 4rem;
+}
+
+.update-delete-btns {
+    position: absolute;
+    right: 0.5em;
+}
+
+.update-delete-btns button {
+    padding: 0.3em 0.5em;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5em;
+    border: 0.1px solid gray;
+    margin-right: 0.2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.update-btn {
+    background-color: rgb(240, 112, 195);
+}
+
+.completed-btn {
+    background-color: rgb(15, 236, 15);
+}
+
+.edit-btn {
+    background-color: mediumblue;
+}
+
+.delete-btn {
+    background-color: rgb(240, 50, 50);
+}

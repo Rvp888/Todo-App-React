@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin: 0.5em 0 1.7em 0;
+  color: black;
+}
+
+.create-todo {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 3.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list-title {
+  color: black;
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+
+.task-div {
+  width: 100%;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.task-div::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+.task-div::-webkit-scrollbar-thumb {  
+  background-color: transparent; 
+  border-radius: 30px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+.task-div::-webkit-scrollbar-thumb:hover {
+  background: rgb(237, 203, 203);
 }
